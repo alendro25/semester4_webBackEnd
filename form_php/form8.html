@@ -1,0 +1,51 @@
+<html>
+<head>
+<title> Tambah/Cari Entri </title>
+<style type="text/css">
+<!--
+td {vertical-align: top;}
+-->
+</style>
+</head>
+<body>
+<form action="Form8Proses.php" method="post">
+<table>
+<tr>
+<td> Nama </td>
+<td><input type="text" name="nama" /></td>
+</tr><tr>
+<td> Tipe Film </td>
+<td>
+<select name="tipe_film">
+<option value=""> Pilih satu tipe film... </option>
+<option value="Aksi"> Aksi </option>
+<option value="Drama"> Drama </option>
+<option value="Komedi"> Komedi </option>
+<option value="Sci-Fi"> Sci-Fi </option>
+<option value="Perang"> Perang </option>
+<option value="Lainnya"> Lainnya... </option>
+</select>
+</td>
+
+</tr><tr>
+<td> Tipe Item </td>
+<td>
+<input type="radio" name="tipe" value="film" checked="checked" /> Film <br/>
+<input type="radio" name="tipe" value="aktor" /> Aktor <br/>
+<input type="radio" name="tipe" value="sutradara"/> Sutradara <br/>
+</td>
+</tr><tr>
+<td></td>
+<td><input type="checkbox" name="debug" checked="checked" />
+Tampilkan Info Debug
+</td>
+</tr><tr>
+<td colspan="2" style="text-align: center;">
+<input type="submit" name="submit" value="Cari" />
+<input type="submit" name="submit" value="Tambah" />
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
